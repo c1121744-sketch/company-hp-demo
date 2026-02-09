@@ -1,11 +1,753 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>株式会社電陽社</title>
+  <meta name="description" content="株式会社電陽社は、制御機器・電子部品・計測機器・ロボット等を販売するとともに、お客様のニーズに合わせたシステム提案を行う技術商社です。北陸３県を中心にお客様の課題に応じたソリューションを提供いたします。" />
+
+  <link rel="icon" href="img\LM_BU.png" />
+  <link rel="apple-touch-icon" href="https://www.denyousya.co.jp/img/apple-touch-icon-precomposed.png" />
+
+  <!-- 外部CSS（別ファイル） -->
+  <link rel="stylesheet" href="style.css" />
+
+  <meta property="og:title" content="株式会社電陽社｜技術商社" />
+  <meta property="og:description" content="現場の課題を、技術で解決。FA・PA・エネルギー・計測・ロボティクスまで一貫支援。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.denyousya.co.jp/img/ogp.png" />
 </head>
+
 <body>
-    
+  <!-- Skip Link -->
+  <a class="skip-link" href="#main">本文へスキップ</a>
+
+  <!-- =========================
+       Header
+  ========================== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="https://www.denyousya.co.jp/">
+        <img class="brand-logo" src="img/Denyousya_J_A.png"
+          onerror="this.style.display='none'; this.insertAdjacentHTML('afterend','<span class=&quot;brand-fallback&quot;>DENYOUSYA</span>');" />
+      </a>
+
+      <nav class="nav" aria-label="グローバルナビゲーション">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+          <span class="sr-only">メニューを開閉</span>
+        </button>
+
+        <div id="nav-menu" class="nav-menu">
+        
+			 <!-- Mobile menu header (inside #nav-menu) -->
+			<div class="nav-menu-head" aria-hidden="true">
+			  <span class="nav-menu-title">MENU</span>
+			  <button class="nav-close" type="button" aria-label="メニューを閉じる">×</button>
+			</div>
+
+          <div class="nav-links">
+            <!-- ▼ ドロップダウン：ソリューション -->
+            <div class="nav-item has-dropdown">
+              <a class="nav-link" href="/page2023/page-solu/page-top.html">
+                ソリューション
+              </a>
+              
+                <button class="nav-subtoggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="dd-solution">
+    <span class="sr-only">ソリューションのサブメニューを開閉</span>
+    <span aria-hidden="true">▾</span>
+  </button>
+
+              <div class="dropdown" id="dd-solution" role="menu">
+                <div class="dropdown-inner">
+                  <div class="dropdown-col">
+                    <p class="dropdown-title">領域</p>
+                    <a class="dropdown-link" href="/page2023/page-solu/page01.html">FAソリューション</a>
+                    <a class="dropdown-link" href="/page2023/page-solu/page02.html">PAソリューション</a>
+                    <a class="dropdown-link" href="/page2023/page-solu/page03.html">エネルギー</a>
+                    <a class="dropdown-link" href="/page2023/page-solu/page08.html">計測</a>
+                    <a class="dropdown-link" href="/page2023/page-solu/page09.html">ロボティクス</a>
+                    <a class="dropdown-link" href="/page2023/page-solu/page06.html">IT / データ活用</a>
+                  </div>
+
+                  <div class="dropdown-col">
+                    <p class="dropdown-title">サービス</p>
+                    <a class="dropdown-link" href="/page2023/page-solu/page10.html">電気設備工事</a>
+                    <a class="dropdown-link" href="/page2023/page-solu/page11.html">保守メンテナンス</a>
+                    <a class="dropdown-link" href="/page2023/page-solu/page12.html">物流</a>
+                    <a class="dropdown-link dropdown-strong" href="/page2023/page-solu/page-top.html">一覧を見る →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ▼ ドロップダウン：取扱メーカー -->
+            <div class="nav-item has-dropdown">
+              <a class="nav-link" href="/page2023/page-solu/page-top.html">取り扱いメーカー</a>
+              
+                              <button class="nav-subtoggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="dd-maker">
+    <span class="sr-only">取り扱いメーカーのサブメニューを開閉</span>
+    <span aria-hidden="true">▾</span>
+  </button>
+  
+              <div class="dropdown dropdown-1col" id="dd-maker" role="menu">
+                <div class="dropdown-inner">
+                  <div class="dropdown-col">
+                    <p class="dropdown-title">メーカー</p>
+                    <a class="dropdown-link" href="/page2023/page-tori/page-top.html">主要取り扱いメーカー</a>
+                    <a class="dropdown-link" href="/page2023/page-tori/page-top.html#fa">FA関連</a>
+                    <a class="dropdown-link" href="/page2023/page-tori/page-top.html#pa">PA関連</a>
+                    <a class="dropdown-link dropdown-strong" href="/page2023/page-tori/page-top.html">一覧を見る →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ▼ ドロップダウン：資料ダウンロード（あなたのコードのまま） -->
+            <div class="nav-item has-dropdown">
+              <a class="nav-link" href="/page2023/page-kigy/page-top.html">資料ダウンロード</a>
+              
+                <button class="nav-subtoggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="dd-download">
+    <span class="sr-only">資料ダウンロードのサブメニューを開閉</span>
+    <span aria-hidden="true">▾</span>
+  </button>
+
+              <div class="dropdown dropdown-1col" id="dd-download" role="menu">
+                <div class="dropdown-inner">
+                  <div class="dropdown-col">
+                    <p class="dropdown-title">企業情報</p>
+                    <a class="dropdown-link" href="/page2023/page-kigy/page01.html">事例集</a>
+                    <a class="dropdown-link" href="/page2023/page-kigy/page02.html">サンプルソフト</a>
+                    <a class="dropdown-link" href="/page2023/page-kigy/page03.html">会社案内</a>
+                    <a class="dropdown-link dropdown-strong" href="/page2023/page-kigy/page-top.html">一覧を見る →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ▼ ドロップダウン：企業情報 -->
+            <div class="nav-item has-dropdown">
+              <a class="nav-link" href="/page2023/page-kigy/page-top.html">企業情報</a>
+              
+                <button class="nav-subtoggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="dd-business">
+    <span class="sr-only">企業情報のサブメニューを開閉</span>
+    <span aria-hidden="true">▾</span>
+  </button>
+
+              <div class="dropdown" id="dd-business" role="menu">
+                <div class="dropdown-inner">
+                  <div class="dropdown-col">
+                    <p class="dropdown-title">企業情報</p>
+                    <a class="dropdown-link" href="/page2023/page-kigy/page01.html">社長挨拶</a>
+                    <a class="dropdown-link" href="/page2023/page-kigy/page02.html">経営理念</a>
+                    <a class="dropdown-link" href="/page2023/page-kigy/page03.html">会社概要</a>
+                    <a class="dropdown-link" href="/page2023/page-kigy/page04.html">沿革</a>
+                  </div>
+
+                  <div class="dropdown-col">
+                    <p class="dropdown-title">取り組み</p>
+                    <a class="dropdown-link" href="/page2023/page-kigy/page05.html">企業風土</a>
+                    <a class="dropdown-link" href="/page2023/page-kigy/page06.html">エコアクション21</a>
+                    <a class="dropdown-link" href="/page2023/page-kigy/page07.html">SDGsへの貢献</a>
+                    <a class="dropdown-link dropdown-strong" href="/page2023/page-kigy/page-top.html">一覧を見る →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ▼ ドロップダウン：採用情報 -->
+            <div class="nav-item has-dropdown">
+              <a class="nav-link" href="/page2023/page-saiy/page-top.html">採用情報</a>
+              
+                <button class="nav-subtoggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="dd-recruit">
+    <span class="sr-only">採用情報のサブメニューを開閉</span>
+    <span aria-hidden="true">▾</span>
+  </button>
+
+              <div class="dropdown dropdown-1col" id="dd-recruit" role="menu">
+                <div class="dropdown-inner">
+                  <div class="dropdown-col">
+                    <p class="dropdown-title">採用情報</p>
+                    <a class="dropdown-link" href="/page2023/page-saiy/page01.html">新卒採用</a>
+                    <a class="dropdown-link" href="https://en-gage.net/ydy_saiyo/" target="_blank" rel="noopener">キャリア採用</a>
+                    <a class="dropdown-link" href="/page2023/page-saiy/page03.html">仕事体験</a>
+                    <a class="dropdown-link dropdown-strong" href="/page2023/page-saiy/page-top.html">一覧を見る →</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =========================
+       Main
+  ========================== -->
+  <main id="main">
+    <!-- =========================
+         Hero
+    ========================== -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="hero-eyebrow">Technical Solution Partner</p>
+          <h1 class="hero-title">
+            現場の課題を、<br />
+            技術で解決する。
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         Recruit News
+    ========================== -->
+    <section class="section section-alt" id="recruit-news">
+      <div class="container">
+        <div class="section-head section-head-row">
+          <div>
+            <h2 class="section-title">NEWS</h2>
+            <p class="section-lead">にゅーす</p>
+          </div>
+        </div>
+
+        <div class="news">
+          <a class="news-item" href="/page2023/page-saiy/page01.html">
+            <time class="news-date" datetime="2026-01-30">2026.01.30</time>
+            <span class="news-tag">新卒</span>
+            <span class="news-title">新卒採用情報はこちら</span>
+          </a>
+
+          <a class="news-item" href="/page2023/page-saiy/page03.html">
+            <time class="news-date" datetime="2026-01-30">2026.01.30</time>
+            <span class="news-tag">イベント</span>
+            <span class="news-title">仕事体験（インターン）情報はこちら</span>
+          </a>
+
+          <a class="news-item" href="https://en-gage.net/ydy_saiyo/" target="_blank" rel="noopener">
+            <time class="news-date" datetime="2025-11-25">2025.11.25</time>
+            <span class="news-tag">中途</span>
+            <span class="news-title">中途採用（募集一覧）</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         Business / Solutions Intro
+    ========================== -->
+    <section class="section" id="business">
+      <div class="container">
+        <div class="section-head section-head-row">
+          <div>
+            <h2 class="section-title">事業紹介</h2>
+            <p class="section-lead">jigyousyoukai</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-wide">
+        <div class="grid grid-3 business-grid">
+
+          <a class="card-solution2" href="/page2023/page-solu/page01.html">
+            <img class="card-solution2-img" src="img/fa.jpg" alt="" loading="lazy">
+            <div class="card-solution2-overlay"></div>
+            <div class="card-solution2-body">
+              <p class="card-solution2-kicker">Factory Automation</p>
+              <h3 class="card-solution2-title">FAソリューション</h3>
+              <span class="card-solution2-action">詳しく見る <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+
+          <a class="card-solution2" href="/page2023/page-solu/page02.html">
+            <img class="card-solution2-img" src="img/pa.jpg" alt="" loading="lazy">
+            <div class="card-solution2-overlay"></div>
+            <div class="card-solution2-body">
+              <p class="card-solution2-kicker">Process Automation</p>
+              <h3 class="card-solution2-title">PAソリューション</h3>
+              <span class="card-solution2-action">詳しく見る <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+
+          <a class="card-solution2" href="/page2023/page-solu/page03.html">
+            <img class="card-solution2-img" src="img/en.png" alt="" loading="lazy">
+            <div class="card-solution2-overlay"></div>
+            <div class="card-solution2-body">
+              <p class="card-solution2-kicker">Energy</p>
+              <h3 class="card-solution2-title">エネルギー</h3>
+              <span class="card-solution2-action">詳しく見る <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+
+          <a class="card-solution2" href="/page2023/page-solu/page08.html">
+            <img class="card-solution2-img" src="img/kei.png" alt="" loading="lazy">
+            <div class="card-solution2-overlay"></div>
+            <div class="card-solution2-body">
+              <p class="card-solution2-kicker">Measurement</p>
+              <h3 class="card-solution2-title">計測</h3>
+              <span class="card-solution2-action">詳しく見る <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+
+          <a class="card-solution2" href="/page2023/page-solu/page09.html">
+            <img class="card-solution2-img" src="img/ro.png" alt="" loading="lazy">
+            <div class="card-solution2-overlay"></div>
+            <div class="card-solution2-body">
+              <p class="card-solution2-kicker">Robotics</p>
+              <h3 class="card-solution2-title">ロボティクス</h3>
+              <span class="card-solution2-action">詳しく見る <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+
+          <a class="card-solution2" href="/page2023/page-solu/page06.html">
+            <img class="card-solution2-img" src="img/it.jpg" alt="" loading="lazy">
+            <div class="card-solution2-overlay"></div>
+            <div class="card-solution2-body">
+              <p class="card-solution2-kicker">IT / Data</p>
+              <h3 class="card-solution2-title">IT / データ活用</h3>
+              <span class="card-solution2-action">詳しく見る <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+
+          <a class="card-solution2" href="/page2023/page-solu/page08.html">
+            <img class="card-solution2-img" src="img/an.png" alt="" loading="lazy">
+            <div class="card-solution2-overlay"></div>
+            <div class="card-solution2-body">
+              <p class="card-solution2-kicker">Analytics</p>
+              <h3 class="card-solution2-title">アナリティカルソリューション</h3>
+              <span class="card-solution2-action">詳しく見る <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+
+          <a class="card-solution2" href="/page2023/page-solu/page09.html">
+            <img class="card-solution2-img" src="img/kan.png" alt="" loading="lazy">
+            <div class="card-solution2-overlay"></div>
+            <div class="card-solution2-body">
+              <p class="card-solution2-kicker">Environment</p>
+              <h3 class="card-solution2-title">環境ソリューション</h3>
+              <span class="card-solution2-action">詳しく見る <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+
+          <a class="card-solution2" href="/page2023/page-solu/page06.html">
+            <img class="card-solution2-img" src="img/de.png" alt="" loading="lazy">
+            <div class="card-solution2-overlay"></div>
+            <div class="card-solution2-body">
+              <p class="card-solution2-kicker">Electrical Materials</p>
+              <h3 class="card-solution2-title">電材ソリューション</h3>
+              <span class="card-solution2-action">詳しく見る <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         Case studies (placeholders)
+    ========================== -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">導入事例・実績</h2>
+          <p class="section-lead">dounyuu jirei and jisseki.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card card-article">
+            <p class="pill">製造業</p>
+            <h3 class="card-title">設備更新：制御盤リプレースで停止時間を最小化</h3>
+            <p class="card-text">課題：老朽化／提案：段階更新＋現場立会い／効果：停止時間を短縮</p>
+            <a class="card-action" href="/page2023/page-down/page01.html">事例を見る →</a>
+          </article>
+
+          <article class="card card-article">
+            <p class="pill">インフラ</p>
+            <h3 class="card-title">監視：電力見える化でムダを特定</h3>
+            <p class="card-text">課題：使用量が不透明／提案：監視＋運用設計／効果：改善サイクル確立</p>
+            <a class="card-action" href="/page2023/page-down/page01.html">事例を見る →</a>
+          </article>
+
+          <article class="card card-article">
+            <p class="pill">物流・搬送</p>
+            <h3 class="card-title">自動化：協働ロボット導入で省人化</h3>
+            <p class="card-text">課題：人手不足／提案：工程分析＋周辺機器一式／効果：運用が定着</p>
+            <a class="card-action" href="/page2023/page-down/page01.html">事例を見る →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         Strengths
+    ========================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">電陽社が選ばれる理由</h2>
+          <p class="section-lead">denyousya ga erabareru riyuu.</p>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <p class="stat-value">設計〜保守</p>
+            <p class="stat-label">ワンストップ支援</p>
+          </div>
+          <div class="stat">
+            <p class="stat-value">複数領域</p>
+            <p class="stat-label">FA / PA / 計測 / 省エネ</p>
+          </div>
+          <div class="stat">
+            <p class="stat-value">現場密着</p>
+            <p class="stat-label">北陸中心に対応</p>
+          </div>
+          <div class="stat">
+            <p class="stat-value">提案型</p>
+            <p class="stat-label">メーカー横断で最適化</p>
+          </div>
+        </div>
+
+        <div class="split">
+          <div class="split-item">
+            <h3 class="split-title">「売って終わり」にしない</h3>
+            <p class="split-text">
+              選定・設計・導入・保守まで見据えて、現場が回る形に落とし込みます。
+              まずは要件整理からでもお気軽にご相談ください。
+            </p>
+          </div>
+          <div class="split-item">
+            <h3 class="split-title">課題から逆算して提案</h3>
+            <p class="split-text">
+              メーカーや製品から入るのではなく、課題・制約・現場運用を起点に最適な組み合わせを作ります。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         Process
+    ========================== -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">ご相談の流れ</h2>
+          <p class="section-lead">gosoudan no nagare.</p>
+        </div>
+
+        <ol class="steps">
+          <li class="step">
+            <p class="step-num">1</p>
+            <div class="step-body">
+              <h3 class="step-title">お問い合わせ</h3>
+              <p class="step-text">困りごと・検討状況・希望納期など、分かる範囲でOK。</p>
+            </div>
+          </li>
+          <li class="step">
+            <p class="step-num">2</p>
+            <div class="step-body">
+              <h3 class="step-title">ヒアリング</h3>
+              <p class="step-text">現場の制約や運用も含めて、要件を整理します。</p>
+            </div>
+          </li>
+          <li class="step">
+            <p class="step-num">3</p>
+            <div class="step-body">
+              <h3 class="step-title">ご提案</h3>
+              <p class="step-text">複数案を比較できる形で、最適案を提示します。</p>
+            </div>
+          </li>
+          <li class="step">
+            <p class="step-num">4</p>
+            <div class="step-body">
+              <h3 class="step-title">導入・サポート</h3>
+              <p class="step-text">導入後も運用が定着するまで伴走します。</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="section-cta">
+          <a class="btn btn-primary" href="/page2023/page-toia/page-top.html?type=consult">お問い合わせ</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================
+       Footer
+  ========================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p class="footer-logo">DENYOUSYA</p>
+        <p class="footer-desc">制御機器・電子部品・計測機器・コンピューターシステムの専門商社</p>
+        <div class="footer-links">
+          <a href="/page2023/page-priv/page-top.html">プライバシーポリシー</a>
+          <a href="/page2023/page-toia/page-top.html">お問い合わせ</a>
+          <a href="/page2023/page-saiy/page-top.html">採用情報</a>
+        </div>
+      </div>
+
+      <div class="footer-cols">
+        <div class="footer-col">
+          <button class="footer-col-title footer-acc-btn" type="button" aria-expanded="false">ソリューション</button>
+    <div class="footer-col-body footer-acc-panel">
+
+          <a href="https://www.denyousya.co.jp/page2023/page-solu/page01.html">FA</a>
+          <a href="https://www.denyousya.co.jp/page2023/page-solu/page02.html">PA</a>
+          <a href="https://www.denyousya.co.jp/page2023/page-solu/page03.html">エネルギー</a>
+          <a href="/page2023/page-solu/page08.html">計測</a>
+          <a href="/page2023/page-solu/page09.html">ロボティクス</a>
+    </div>
+        </div>
+
+        <div class="footer-col">
+        <button class="footer-col-title footer-acc-btn" type="button" aria-expanded="false">資料・情報</button>
+          <div class="footer-col-body footer-acc-panel">
+
+                      <a href="/page2023/page-down/page-top.html">ダウンロード</a>
+          <a href="/page2023/page-tori/page-top.html">取扱メーカー</a>
+          <a href="/page2023/page-carb/page-top.html">カーボンニュートラル</a>
+          </div>
+
+        </div>
+
+        <div class="footer-col">
+        <button class="footer-col-title footer-acc-btn" type="button" aria-expanded="false">企業情報</button>
+          <div class="footer-col-body footer-acc-panel">
+          <a href="/page2023/page-kigy/page03.html">会社概要</a>
+          <a href="/page2023/page-kigy/page04.html">沿革</a>
+          <a href="/page2023/page-kigy/page07.html">SDGs</a>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <small>copyright © 2026-DENYOUSYA Co.,Ltd. All rights reserved.</small>
+      <button class="to-top" type="button" aria-label="ページ上部へ">↑</button>
+
+      <!-- Easter Egg（左下：左に隠れて→押すと出る） -->
+      <div class="easter-egg" id="easterEgg">
+        <button class="egg-hit" type="button" aria-expanded="false">
+          <span class="sr-only">隠しキャラクターを表示</span>
+        </button>
+        <img class="egg-img" src="img/dog.png" alt="" aria-hidden="true" loading="lazy">
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================
+       Minimal JS (menu + to-top + egg)
+  ========================== -->
+<script>
+  (function () {
+    const toggle = document.querySelector(".nav-toggle");
+    const menu = document.querySelector("#nav-menu");
+    const closeBtn = document.querySelector(".nav-close");
+    const toTop = document.querySelector(".to-top");
+
+    function isMobile() {
+      return window.matchMedia("(max-width: 760px)").matches;
+    }
+
+    function openMenu() {
+      if (!toggle || !menu) return;
+      toggle.setAttribute("aria-expanded", "true");
+      menu.classList.add("is-open");
+      document.body.classList.add("nav-open");
+    }
+
+    function closeMenu() {
+      if (!toggle || !menu) return;
+      toggle.setAttribute("aria-expanded", "false");
+      menu.classList.remove("is-open");
+      document.body.classList.remove("nav-open");
+
+      // ✅ 閉じたらサブメニューも全部閉じる（スマホ）
+      if (isMobile()) {
+        menu.querySelectorAll(".nav-item.is-open").forEach((item) => item.classList.remove("is-open"));
+        menu.querySelectorAll(".nav-subtoggle[aria-expanded='true']").forEach((btn) => btn.setAttribute("aria-expanded", "false"));
+      }
+    }
+
+    // ハンバーガー開閉
+    if (toggle && menu) {
+      toggle.addEventListener("click", () => {
+        const expanded = toggle.getAttribute("aria-expanded") === "true";
+        if (expanded) closeMenu();
+        else openMenu();
+      });
+    }
+
+    // ×で閉じる
+    if (closeBtn) {
+      closeBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        closeMenu();
+      });
+    }
+
+    // 暗幕クリックで閉じる（メニュー外をタップしたら閉じたい場合）
+    document.addEventListener("click", (e) => {
+      if (!isMobile()) return;
+      if (!document.body.classList.contains("nav-open")) return;
+      // nav-menuの外をクリックしたら閉じる
+      if (menu && !menu.contains(e.target) && !toggle.contains(e.target)) {
+        closeMenu();
+      }
+    });
+
+    // ESCで閉じる
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeMenu();
+    });
+
+    // メニュー内のリンクを押したら閉じる（スマホのみ）
+    if (menu) {
+      menu.addEventListener("click", (e) => {
+        const a = e.target.closest("a");
+        if (a && isMobile()) closeMenu();
+      });
+    }
+
+    // ▼（サブメニュー）開閉（スマホのみ）
+    document.querySelectorAll(".nav-subtoggle").forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        if (!isMobile()) return; // PCはhoverのまま
+        e.preventDefault();
+        e.stopPropagation();
+
+        const item = btn.closest(".nav-item");
+        if (!item) return;
+
+        // ✅ 「ボタンの直後にある .dropdown」を対象にする（id重複でも動く）
+        // 例： <a>...</a><button class="nav-subtoggle">...</button><div class="dropdown">...</div>
+        const dropdown = btn.nextElementSibling && btn.nextElementSibling.classList?.contains("dropdown")
+          ? btn.nextElementSibling
+          : item.querySelector(".dropdown");
+
+        if (!dropdown) return;
+
+        const open = !item.classList.contains("is-open");
+
+        // ✅ 他のサブメニューは閉じる（よくあるUI挙動）
+        menu.querySelectorAll(".nav-item.is-open").forEach((other) => {
+          if (other !== item) other.classList.remove("is-open");
+        });
+        menu.querySelectorAll(".nav-subtoggle[aria-expanded='true']").forEach((otherBtn) => {
+          if (otherBtn !== btn) otherBtn.setAttribute("aria-expanded", "false");
+        });
+
+        item.classList.toggle("is-open", open);
+        btn.setAttribute("aria-expanded", String(open));
+
+        // ✅ 開いた項目が×ヘッダーに隠れないようにちょいスクロール（必要なら）
+        if (open) {
+          const head = menu.querySelector(".nav-menu-head");
+          const headH = head ? head.getBoundingClientRect().height : 0;
+          const y = item.getBoundingClientRect().top - (headH + 12);
+          if (y < 0) menu.scrollBy({ top: y, behavior: "smooth" });
+        }
+      });
+    });
+
+    // 画面サイズがPCに戻ったら、モバイル状態を解除
+    window.addEventListener("resize", () => {
+      if (!isMobile()) {
+        // PCで body の nav-open が残ると邪魔なので解除
+        document.body.classList.remove("nav-open");
+        if (toggle) toggle.setAttribute("aria-expanded", "false");
+        if (menu) menu.classList.remove("is-open");
+
+        // サブメニューの「クリック開閉」状態もリセット
+        if (menu) {
+          menu.querySelectorAll(".nav-item.is-open").forEach((item) => item.classList.remove("is-open"));
+          menu.querySelectorAll(".nav-subtoggle").forEach((btn) => btn.setAttribute("aria-expanded", "false"));
+        }
+      }
+    });
+
+    // to-top
+    if (toTop) {
+      toTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) toTop.classList.add("is-visible");
+        else toTop.classList.remove("is-visible");
+      });
+    }
+
+    // Easter Egg
+    const egg = document.querySelector("#easterEgg");
+    if (egg) {
+      const hit = egg.querySelector(".egg-hit");
+      const toggleEgg = () => {
+        const open = !egg.classList.contains("is-open");
+        egg.classList.toggle("is-open", open);
+        hit.setAttribute("aria-expanded", String(open));
+      };
+      if (hit) {
+        hit.addEventListener("click", (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          toggleEgg();
+        });
+      }
+    }
+  })();
+
+  (function(){
+    // 既存コードの最後あたりに追加
+    const footerBtns = document.querySelectorAll(".footer-acc-btn");
+
+    footerBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        // スマホだけ
+        if (!window.matchMedia("(max-width: 760px)").matches) return;
+
+        const col = btn.closest(".footer-col");
+        if (!col) return;
+
+        const open = !col.classList.contains("is-open");
+
+        // 1つだけ開く挙動にしたいなら（要らなければこのforEachブロック消してOK）
+        document.querySelectorAll(".footer-col.is-open").forEach((other) => {
+          if (other !== col) {
+            other.classList.remove("is-open");
+            const b = other.querySelector(".footer-acc-btn");
+            if (b) b.setAttribute("aria-expanded", "false");
+          }
+        });
+
+        col.classList.toggle("is-open", open);
+        btn.setAttribute("aria-expanded", String(open));
+      });
+    });
+  })();
+</script>
+
+
 </body>
 </html>
