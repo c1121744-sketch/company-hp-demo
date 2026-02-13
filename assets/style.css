@@ -1507,3 +1507,56 @@ strong{ font-weight: 700; }
   }
 }
 
+
+/* =========================
+   Recruit Page
+========================= */
+.recruit-page .recruit-hero{
+  padding: 72px 0 58px;
+  background: linear-gradient(120deg, rgba(0,78,135,0.94), rgba(11,60,93,0.92));
+  color: #fff;
+}
+.recruit-title{ margin-bottom: 14px; }
+.recruit-lead{ max-width: 52rem; margin-bottom: 22px; }
+.recruit-actions{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.recruit-btn-sub{
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.38);
+  color: #fff;
+}
+.recruit-btn-sub:hover{ background: rgba(255,255,255,0.18); }
+
+.recruit-grid .card,
+.recruit-faq .card{
+  background: #fff;
+}
+.recruit-flow-wrap{
+  max-width: 920px;
+}
+.recruit-flow{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+.recruit-flow li{
+  background: #fff;
+  border: 1px solid rgba(15,23,42,0.12);
+  border-radius: 12px;
+  padding: 14px 16px;
+  display: grid;
+  gap: 4px;
+}
+.recruit-flow li strong{ font-size: 1.03rem; }
+.recruit-flow li span{ color: var(--muted); font-weight: 600; }
+.recruit-bottom-cta{ margin-top: 30px; }
+
+@media (max-width: 760px){
+  .recruit-page .recruit-hero{ padding: 56px 0 46px; }
+  .recruit-flow{ gap: 10px; }
+}
